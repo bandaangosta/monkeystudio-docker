@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+docker run --rm --net=host --env QT_X11_NO_MITSHM=1 --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" -v "${PWD}":/project monkeystudio:latest
